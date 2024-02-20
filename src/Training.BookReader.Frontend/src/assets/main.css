@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .theme-bg-primary{
+        @apply bg-bgColorPrimaryDark dark:bg-bgColorPrimaryDark
+    }
+
+    .theme-bg-lang-primary{
+        @apply bg-[#314059]
+    }
+
+    .theme-border {
+        @apply border border-borderColor dark:border-borderColorDark;
+    }
+
+    .theme-search-line-border-color{
+        @apply border-borderInputColor dark:border-borderInputColor;
+    }
+
+
+    .theme-hover{
+        @apply hover:text-white hover:bg-[#294f7b]
+    }
+    .theme-bg-hover{
+        @apply bg-transparent text-white text-lg
+    }
+
+    .hover-duration{
+        @apply hover:duration-500
+    }
+}
+
+@layer utilities {
+
+    /* Hide scrollbar for Chrome, Safari, and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge, and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+    }
+}
